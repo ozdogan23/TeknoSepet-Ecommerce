@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#1E3A5F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#243F6B">
+
+        <!-- Ürün Resmi -->
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/cd_product_image"/>
+
+        <!-- Ürün İsmi -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#F2F4F8"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <!-- Ürün Fiyatı -->
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6CB4EE"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Butonlar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/btnFav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_icon_circle"
+                android:backgroundTint="#6CB4EE"
+                app:tint="#0D1B2A"
+                android:src="@drawable/ic_favorite"
+                android:contentDescription="@string/cd_favorite"/>
+
+            <ImageButton
+                android:id="@+id/btnCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_icon_circle"
+                android:backgroundTint="#6CB4EE"
+                app:tint="#0D1B2A"
+                android:src="@drawable/ic_cart"
+                android:contentDescription="@string/cd_cart"/>
+
+            <Button
+                android:id="@+id/btnDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/btn_detail"
+                android:textSize="12sp"
+                android:textColor="#0D1B2A"
+                android:backgroundTint="#6CB4EE"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

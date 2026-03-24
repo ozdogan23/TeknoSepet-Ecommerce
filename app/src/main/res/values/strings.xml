@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TeknoSepet</string>
+
+    <!-- Fragment default -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Item Product -->
+    <string name="btn_detail">İncele</string>
+    <string name="cd_product_image">Ürün görseli</string>
+    <string name="cd_favorite">Favorilere ekle</string>
+    <string name="cd_cart">Sepete ekle</string>
+
+</resources>

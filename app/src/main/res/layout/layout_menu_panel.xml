@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bottom_sheet_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menü"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/panelGirisYok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔓  Giriş Yap"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/menu_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝  Üye Ol"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelGirisVar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/menu_hesap_bilgi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤  Hesap Bilgileri"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/menu_sepet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛒  Sepetim"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/menu_siparislerim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📦  Siparişlerim"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/menu_favori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❤️  Favorilerim"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/menu_sifre_degistir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔑  Şifre Değiştir"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/menu_cikis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚪  Çıkış Yap"
+            android:textColor="#D32F2F"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/menu_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📞  İletişim / Destek"
+        android:textSize="18sp"
+        android:padding="12dp"/>
+
+</LinearLayout>

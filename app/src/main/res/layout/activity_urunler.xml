@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:id="@+id/ustBarUrunler"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:paddingStart="10dp"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/btnGeriDonUrunler"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="#333333"/>
+
+        <TextView
+            android:id="@+id/txtKategoriBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori Başlığı"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/altBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/btnAnaSayfaGit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:tint="#757575"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ana Sayfa"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnSepetGit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@android:drawable/ic_input_add"
+                android:tint="#4CAF50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sepetim"
+                android:textStyle="bold"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnFavoriGit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/star_off"
+                android:tint="#757575"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favori"
+                android:textSize="11sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtIcerik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürünler Buraya Gelecek"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="#999999"/>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5">
+
+    <LinearLayout
+        android:id="@+id/ustBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_sheet_bg"
+            android:hint="🔍  Mağazada ara..."
+            android:paddingStart="15dp"
+            android:textColor="#333333"
+            android:textColorHint="#757575"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"/>
+
+        <ImageView
+            android:id="@+id/btnProfileMenu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_user_profile"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bottom_sheet_bg"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/altBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                app:tint="#757575"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ana Sayfa"
+                android:textColor="#757575"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnSepetimAlt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="#4CAF50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sepetim"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_fav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/star_off"
+                app:tint="#757575"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favori"
+                android:textColor="#757575"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listKategoriler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ustBar"
+        android:layout_above="@id/altBar"
+        android:layout_marginTop="15dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAramaSonuc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ustBar"
+        android:layout_above="@id/altBar"
+        android:background="#F0F2F5"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:clipToPadding="false"/>
+
+</RelativeLayout>

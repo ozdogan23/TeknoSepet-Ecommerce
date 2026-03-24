@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- BASE THEME -->
+    <style name="Base.Theme.TeknoSepet"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- PRIMARY -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+
+        <!-- SECONDARY -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/onSecondaryContainer</item>
+
+        <!-- BACKGROUND -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+
+        <!-- SURFACE -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+
+        <!-- ERROR -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+
+    </style>
+
+    <!-- NORMAL UYGULAMA TEMASI -->
+    <style name="Theme.TeknoSepet"
+        parent="Base.Theme.TeknoSepet" />
+
+    <!-- SPLASH SCREEN -->
+    <style name="Theme.TeknoSepet.Splash"
+        parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.TeknoSepet</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bottom_sheet_bg"> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sipariş Onayı"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textColor="#333"
+    android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Güvenliğiniz için lütfen giriş bilgilerinizi doğrulayın."
+        android:gravity="center"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editDialogEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="E-Posta Adresiniz"
+        android:inputType="textEmailAddress"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editDialogSifre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Şifreniz"
+        android:inputType="textPassword"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnDialogOnayla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doğrula ve Siparişi Bitir"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

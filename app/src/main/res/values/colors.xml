@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Material 3 - Ana Renkler -->
+    <color name="primary">#1E88E5</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <color name="primaryContainer">#BBDEFB</color>
+    <color name="onPrimaryContainer">#0D47A1</color>
+
+    <!-- Secondary / Accent -->
+    <color name="secondary">#2ECC71</color>
+    <color name="onSecondary">#FFFFFF</color>
+
+    <color name="secondaryContainer">#D5F5E3</color>
+    <color name="onSecondaryContainer">#1E8449</color>
+
+    <!-- Arka Plan -->
+    <color name="background">#F5F7FA</color>
+    <color name="onBackground">#212121</color>
+
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#212121</color>
+
+    <!-- Metin -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#616161</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <!-- Hata -->
+    <color name="error">#E53935</color>
+    <color name="onError">#FFFFFF</color>
+
+</resources>
